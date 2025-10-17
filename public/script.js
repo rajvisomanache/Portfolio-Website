@@ -26,7 +26,6 @@ console.log("Portfolio script loaded.");
 // --- Contact Form Submission with Email Verification ---
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
-const emailInput = document.getElementById('email');
 
 if (contactForm) {
     contactForm.addEventListener('submit', async (event) => {
@@ -42,8 +41,8 @@ if (contactForm) {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            // Step 1: Verify email via your disposable email detector
-            const emailCheck = await fetch('https://disposable-e-mail-address-detector.onrender.com/api/check', {
+            // Step 1: Verify email via YOUR OWN backend
+            const emailCheck = await fetch('/api/check-disposable', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email: data.email })
@@ -52,7 +51,7 @@ if (contactForm) {
             const checkResult = await emailCheck.json();
 
             if (checkResult.is_disposable) {
-                throw new Error('Please use a valid, non-disposable email.');
+                throw new Error('Please use a valid, non-disposable email address.');
             }
 
             // Step 2: Submit form to your portfolio backend
