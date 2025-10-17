@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajvi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#hero" class="logo">Portfolio</a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1>Hello, I am </h1>
+                <h1>Rajvi Somanache</h1>
+                <p>Web Developer | Aspiring ML engineer</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" aria-label="Scroll down to about section">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro"> 
+                            Hello! I'm Rajvi Somanache, a Third Year Engineering student based in Pune with a passion for learning new things and to try solving problems by using technology.
+                        <p>
+                            I enjoy bringing ideas to life through code and am actively developing my skills in web technologies. Alongside my web development journey, I'm diving into the fascinating world of Artificial Intelligence and Machine Learning, aiming to build a strong foundation in both development logic and the technologies shaping our future.
+                        </p>
+
+                        <!-- Added Skills/Interests List -->
+                        <div class="skills-interests">
+                            <h4>Key Skills & Interests:</h4>
+                            <ul>
+                                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Exploring:</strong> MERN Stack (MongoDB, Express, React, Node.js)</li>
+                                <li><strong>Learning:</strong> AIML Concepts</li>
+                                <li><strong>Hobbies:</strong> Formula 1, Football, Volleyball, Dancing, Reading (especially Dan Brown!)</li>
+                                <li><strong>Focus:</strong> Problem-Solving & Coding Challenges</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section alt-bg">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="assets/images/vm.jpg" alt = "vm image">
+                        <div class="project-info" >
+                            <h3>Virtual Mouse</h3>
+                            <p>A virtual mouse system made using Python Programming language.
+                                It is a classic OpenCV beginner project, analyzing hand gestures in real time.
+                            Do visit the repository to know more! </p>
+                            <div class="project-links">
+                                <a href="https://github.com/rajvisomanache/virtualmouse" target="_blank" rel="noopener noreferrer">Code Repo <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                         <img src="assets/images/ttt.jpg" alt="xo image">
+                         <div class="project-info">
+                            <h3>Tic-Tac-Toe</h3>
+                            <p>The classic game of Tic-Tac-Toe implemented using Java Programming.
+                                Basic logic implementation is based on arrays. Do visit the repository to know more!
+                            </p>
+                             <div class="project-links">
+                                <a href="https://github.com/rajvisomanache/tic-tac-toe" target="_blank" rel="noopener noreferrer">Code Repo <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="assets/images/web.jpg" alt="siteimage">
+                        <div class="project-info">
+                           <h3>Portfolio Website</h3>
+                           <p>Built a simple yet elegant Portfolio Website using HTML, CSS and JS for frontend and node.js for backend.
+                            Implemented a database to store contact informations. Do visit the repository to know more!
+                           </p>
+                            <div class="project-links">
+                               <a href="https://github.com/rajvisomanache/FUTURE_FS_01" target="_blank" rel="noopener noreferrer">Code Repo <i class="fab fa-github"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="assets/images/m.jpg" alt="siteimage">
+                        <div class="project-info">
+                           <h3>WeatherCraft</h3>
+                           <p>Created a Minecraft-themed weather application that provides real-time weather data. 
+                              I used HTML, CSS, and JavaScript to fetch and display data by integrating the OpenWeatherMap API.
+                            <div class="project-links">
+                               <a href="https://github.com/rajvisomanache/WeatherCraft" target="_blank" rel="noopener noreferrer">Code Repo <i class="fab fa-github"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Resume Section -->
+<section id="resume" class="resume-section">
+    <div class="resume-container" style="text-align: center;">
+        <h2>My Resume</h2>
+        <p>Click below to view my resume.</p>
+        <div class="resume-buttons">
+            <a href="assets/Resume_825.pdf" target="_blank" class="view-btn" rel="noopener noreferrer">
+                <i class="fas fa-file-pdf"></i> Open Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!-- Contact Section -->
+<section id="contact" class="content-section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <p>Interested in collaborating or just want to say hi? Reach out using the form below or through my social links!</p>
+
+        <!-- START: Added Contact Form -->
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+            <div id="form-status" class="form-status"></div> <!-- For success/error messages -->
+        </form>
+        <!-- END: Added Contact Form -->
+
+        <div class="contact-options">
+            <a href="https://www.linkedin.com/in/rajvi-somanache-svt17270507?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="contact-button social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+             <a href="https://github.com/rajvisomanache" target="_blank" rel="noopener noreferrer" class="contact-button social-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <!-- Add other social links (Twitter, etc.) if desired -->
+        </div>
+    </div>
+</section>
+         
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Rajvi Somanache. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
